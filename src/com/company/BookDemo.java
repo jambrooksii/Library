@@ -52,8 +52,8 @@ public class BookDemo {
 
             Scanner newScan = new Scanner(System.in);
             Scanner scanNew = new Scanner(System.in);
-            System.out.println("Welcome to the Libary, What would you like to do?" + "\n" + "Click [1] Add Books " + "\n" + "Click [2] Check Out Books" + "\n" + "Click [3] See List Of Books" +
-                    "\n" + "Click [4] Exit");
+            System.out.println("Welcome to the Libary, What would you like to do?" + "\n" + "Click [1] Add Books "  + "\n" + "Click [2] See List Of Books" +
+                    "\n" + "Click [3] Exit");
 
             int userInput = newScan.nextInt();
 
@@ -137,19 +137,19 @@ public class BookDemo {
 
                     }
 
-                    System.out.println("Do you want to go back to the main menu \n Press [1] for Yes \n Press [2] for No");
-                    goAgain = scanNew.nextInt();
-                    if (goAgain == 1) {
-                        play = true;
-                    } else if (goAgain == 2) {
-                        play = false;
-                    }
+
                 case 3:
                     System.out.println("Thank You for Visiting");
                     play = false;
 
             }
-
+            System.out.println("Do you want to go back to the main menu \n Press [1] for Yes \n Press [2] for No");
+            goAgain = scanNew.nextInt();
+            if (goAgain == 1) {
+                play = true;
+            } else if (goAgain == 2) {
+                play = false;
+            }
 
         } while (play == true);
     }
